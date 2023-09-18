@@ -4,6 +4,7 @@ import Card from "./DataCard";
 import { listOfData } from "../utils/constant";
 import Charts from "./Charts";
 import ProfileCard from "./ProfileCard";
+import Popup from "../popup/Popup";
 
 const Dashboard = () => {
 	return (
@@ -48,7 +49,7 @@ const Dashboard = () => {
       {/* Profile card */}
 			<div className=" flex gap-8 justify-between items-center">
           <ProfileCard/>
-          <ProfileCard/>
+          <Popup/>
       </div>
 		</div>
 	);

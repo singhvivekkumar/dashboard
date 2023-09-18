@@ -1,24 +1,24 @@
 import SignIn from "./components/SignIn";
-import './App.css';
+import "./App.css";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element:<SignIn/>
+		element: <SignIn />,
 	},
 	{
 		path: "/dashboard",
-		element: <Layout/>
-	}
-])
+		element: <Layout />,
+	},
+]);
 
 function App() {
 	return (
 		<RouterProvider router={router}>
 			<div className=" min-w-[340px] m-auto ">
-				<Outlet/>
+				<Outlet />
 			</div>
 		</RouterProvider>
 	);

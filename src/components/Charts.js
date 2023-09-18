@@ -14,9 +14,7 @@ import {
 	CartesianGrid,
 	BarChart,
 	Bar,
-	Legend,
 	XAxis,
-	YAxis,
 	Tooltip,
 } from "recharts";
 

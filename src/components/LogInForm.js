@@ -5,9 +5,12 @@ import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { BsApple } from "react-icons/bs";
 import Dashboard from "./Dashboard";
+import { useNavigate } from "react-router-dom";
 
 const LogInForm = () => {
 	const [successFull, setSuccessFull] = useState(false);
+
+	const navigate = useNavigate();
 
 	const initialValues = {
 		email: "",
@@ -31,6 +34,7 @@ const LogInForm = () => {
 			})
 			.catch((error) => console.log(error.message));
 		console.log(values);
+		navigate("/dashboard");
 	};
 
 	return successFull ? (
@@ -44,10 +48,10 @@ const LogInForm = () => {
 			</div>
 			{/* button */}
 			<div className="flex justify-between space-x-4 text-xs ">
-				<button className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300 ">
+				<button onClick={()=> navigate("/dashboard")} className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300 ">
 					<FcGoogle className=" text-2xl lg:pr-2" /> Sign In with Google
 				</button>
-				<button className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300">
+				<button onClick={()=> navigate("/dashboard")} className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300">
 					<BsApple className=" text-2xl lg:pr-2" /> Sign In with Apple
 				</button>
 			</div>
