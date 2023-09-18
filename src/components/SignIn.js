@@ -28,7 +28,7 @@ const SignIn = () => {
 				</div>
 			</div>
 			<div className=" flex justify-center items-center w-full lg:w-1/2 h-full ">
-				<div className=" w-full lg:w-3/6 ">
+				<div className=" w-4/5 md:w-3/5 lg:w-3/5 ">
 					<LogInForm />
 				</div>
 			</div>

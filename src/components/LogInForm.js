@@ -43,12 +43,12 @@ const LogInForm = () => {
 				<p className=" text-lg ">Sign in to your account</p>
 			</div>
 			{/* button */}
-			<div className="flex justify-between text-xs ">
+			<div className="flex justify-between space-x-4 text-xs ">
 				<button className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300 ">
-					<FcGoogle className=" text-2xl pr-2" /> Sign In with Google
+					<FcGoogle className=" text-2xl lg:pr-2" /> Sign In with Google
 				</button>
 				<button className=" inline-flex items-center p-1 px-4 text-slate-500 bg-white rounded-xl border border-slate-300">
-					<BsApple className=" text-2xl pr-2" /> Sign In with Apple
+					<BsApple className=" text-2xl lg:pr-2" /> Sign In with Apple
 				</button>
 			</div>
 			{/* form */}
